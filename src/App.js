@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { Fragment, useContext } from "react";
 
-function App() {
+import Navigation from './routes/Navigation/Navigation.component';
+import Home from "./routes/Home/Home.component";
+import Projects from "./routes/Projects/Projects.component";
+import About from './routes/About/About.component';
+
+import { SwitchContext } from './contexts/switch.context';
+
+import { GlobalStyle } from './global.styles';
+
+const App = () => {
+  const { isThemeDark } = useContext(SwitchContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <GlobalStyle isThemeDark={isThemeDark}/>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </Fragment>
   );
 }
 
