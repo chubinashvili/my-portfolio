@@ -21,7 +21,7 @@ const PROJECTS = [
       ],
     },
     {
-      title: 'EXENSIFY',
+      title: 'EXPENSIFY',
       body: 'Manage your expenses using web app.',
       web: 'https://expensify5.herokuapp.com/',
       imageUrl: '/images/expensify.PNG',

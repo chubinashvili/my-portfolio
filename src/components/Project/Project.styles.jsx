@@ -23,7 +23,7 @@ export const ProjectContainer = styled.div`
     color: #3e4343;
     text-align: center;
     background-color: #cfd8d8;       
-    height: 24rem;
+    height: 26rem;
     width: 20rem;
     border-radius: 0.25rem;
     border: 1px solid rgba(0,0,0,.125);
