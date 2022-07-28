@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 20px 30px;
-        font-family: 'Kanit', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         ${({isThemeDark}) => isThemeDark && darkThemeStyles}
