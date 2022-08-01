@@ -17,6 +17,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     @media screen and (max-width: 800px) {
         flex-direction: column;
+        margin-bottom: 1.2rem;
     }
 
 `   
@@ -33,6 +34,4 @@ export const Link = styled.a`
     margin-left: 1.2rem;  
     color: #435858;
     ${({isThemeDark}) => isThemeDark && darkThemeStylesLink} 
-
-
 `

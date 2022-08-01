@@ -13,25 +13,19 @@ export const NavContainer = styled.nav`
     height: 12rem;
     align-items: center;
     @media screen and (max-width: 800px) {
-        flex-direction: column;
-        justify-content: left;  
-        height: 15rem;
-        width: 85%;
+        justify-content: flex-start;
     }
 `
 
 export const IconContainer = styled.div`
     cursor: pointer;
     @media screen and (max-width: 800px) {
-        margin-left: 1.2rem  
+        margin-left: 1.2rem;
     }
 `
 export const NavLinks = styled.ul`
-    list-style-type: none;
     display: flex;
-    @media screen and (max-width: 800px) {
-        flex-direction: column;    
-    }
+    list-style: none;
 `
 
 export const Navlink = styled(Link)`
@@ -40,6 +34,6 @@ export const Navlink = styled(Link)`
     color: #435858;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
     @media screen and (max-width: 800px) {
-        margin-left: 0;  
+        margin-left: .8rem;  
     }
 `

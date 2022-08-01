@@ -24,7 +24,8 @@ export const TextContainer = styled.div`
     width: 70%;
     margin-left: 15rem;
     @media screen and (max-width: 800px) {
-        margin-left: 5rem;  
+        margin-left: 4rem; 
+        width: 100%;
     }
 `
 
@@ -52,7 +53,7 @@ export const Button = styled.a`
     font-weight: 700;
     @media screen and (max-width: 800px) {
         margin-right: 0;
-        margin-left: 3rem
+        margin-left: 1.7rem
         
     }
 `

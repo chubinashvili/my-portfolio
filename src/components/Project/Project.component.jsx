@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
-import { ProjectLinkWrapper, ProjectContainer, Title, TechList, Image, Txt } from './Project.styles';
+import { ProjectLinkWrapper, ProjectContainer, ContentContainer, Title, TechList, Image, Txt } from './Project.styles';
 
 import { SwitchContext } from '../../contexts/switch.context';
 

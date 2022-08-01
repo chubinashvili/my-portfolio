@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         ${({isThemeDark}) => isThemeDark && darkThemeStyles}
         @media screen and (max-width: 800px) {
-            padding: 10px;
+            padding: 0;
         }
     }
     html {

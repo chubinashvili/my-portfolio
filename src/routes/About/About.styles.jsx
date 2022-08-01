@@ -20,7 +20,8 @@ export const AboutTextContainer = styled.div`
     width: 70%;
     margin-left: 15rem;
     @media screen and (max-width: 800px) {
-        margin-left: 5rem;  
+        margin-left: 4rem; 
+        width: 90%;
     }
 `
 
