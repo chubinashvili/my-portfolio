@@ -7,28 +7,23 @@ const darkThemeStyles = css`
 ` 
 
 export const NavContainer = styled.nav`
-    width: 100%;
+    max-width: 100vw;
     display: flex;
     justify-content: space-around;
     height: 12rem;
     align-items: center;
-    @media screen and (max-width: 800px) {
-        justify-content: space-between;
-        width: 22rem;
-    }
 `
 
 export const IconContainer = styled.div`
     cursor: pointer;
-    @media screen and (max-width: 800px) {
-    }
+
 `
 export const NavLinks = styled.ul`
     display: flex;
     list-style: none;
     @media screen and (max-width: 800px) {
-        width: 80%;
-        justify-content: space-between;
+        width: 75%;
+        justify-content: space-around;
     }
 `
 

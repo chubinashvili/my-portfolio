@@ -11,11 +11,11 @@ const darkThemeStylesLink = css`
 
 export const FooterContainer = styled.div`
     display: flex;
-    width: 100%;
+    max-width: 100vw;
     height: 5rem;
     justify-content: space-around;
     align-items: center;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 522px) {
         flex-direction: column;
         margin-bottom: 1.2rem;
     }
