@@ -13,19 +13,23 @@ export const NavContainer = styled.nav`
     height: 12rem;
     align-items: center;
     @media screen and (max-width: 800px) {
-        justify-content: flex-start;
+        justify-content: space-between;
+        width: 22rem;
     }
 `
 
 export const IconContainer = styled.div`
     cursor: pointer;
     @media screen and (max-width: 800px) {
-        margin-left: 1.2rem;
     }
 `
 export const NavLinks = styled.ul`
     display: flex;
     list-style: none;
+    @media screen and (max-width: 800px) {
+        width: 80%;
+        justify-content: space-between;
+    }
 `
 
 export const Navlink = styled(Link)`
@@ -34,6 +38,6 @@ export const Navlink = styled(Link)`
     color: #435858;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
     @media screen and (max-width: 800px) {
-        margin-left: .8rem;  
+        margin-left: 0rem;
     }
 `
