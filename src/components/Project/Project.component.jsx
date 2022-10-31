@@ -21,7 +21,7 @@ const Project = ({ title, body, technologies, imageUrl, web}) => {
           <TechList isThemeDark={isThemeDark}>
             {technologies.map((tech) => (
               <li key={tech} >
-                {tech}
+                {tech.toUpperCase()}
               </li>
             ))}
           </TechList>

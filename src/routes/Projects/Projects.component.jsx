@@ -37,7 +37,7 @@ const PROJECTS = [
       body: 'Discover campgrounds and new cool places',
       web: 'https://yelpcamp56.herokuapp.com/ ',
       imageUrl: '/images/yelpcamp.PNG',
-      technologies: ['Node.js', 'MONGODB'],
+      technologies: ['Javascript', 'Node.js', 'MONGODB'],
     },
     {
         title: 'CHAT APP',

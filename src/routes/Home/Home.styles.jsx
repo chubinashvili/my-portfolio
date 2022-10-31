@@ -12,12 +12,12 @@ const darkThemeStylesBtn = css`
 export const HomeContainer = styled.div`
     margin-bottom: 20rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 100vw;
 `
 
-export const TextContainer = styled.div`
+export const ContentContainer = styled.div`
     text-align: left;
 `
 
@@ -25,20 +25,18 @@ export const Text = styled.h1`
     line-height: 2.2rem;
     color: #435858;
     font-weight: 400;
-    max-width:60rem;
+    max-width: 60rem;
     ${({isThemeDark}) => isThemeDark && darkThemeStylesTxt} 
     @media screen and (max-width: 800px) {
         line-height: 1.7rem;
-        max-width: 50rem;
-        margin-left: 2rem;
-
+        max-width: 40rem;
+        margin-left: .8rem;
     }
 `
 
 export const Button = styled.a`
     ${({isThemeDark}) => isThemeDark && darkThemeStylesBtn} 
     margin-top: 1.5rem;
-    margin-right: 50rem;
     display: inline-block;
     background-color:  #435858;
     color: rgb(229 229 229);
@@ -50,8 +48,7 @@ export const Button = styled.a`
     width: 10rem;
     @media screen and (max-width: 800px) {
         margin-right: 0rem;
-        margin-left: 2rem;
-        align-self: flex-start;
+        margin-left: .8rem;
     }
 `
 

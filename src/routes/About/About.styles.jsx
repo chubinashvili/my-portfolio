@@ -9,14 +9,10 @@ export const AboutContainer = styled.div`
     align-items: center;
     flex-direction: column;
     margin-bottom: 20rem;
-    @media screen and (max-width: 800px) {
-        margin-top:5rem;
-        margin-bottom: 13rem;
-    }
 `
 
 export const AboutTextContainer = styled.div`
-        text-align: left;
+    text-align: left;
 
 `
 
@@ -29,7 +25,7 @@ export const AboutText = styled.h1`
     @media screen and (max-width: 800px) {
         line-height: 1.7rem;
         max-width: 50rem;
-        margin-left: 2rem;
+        margin-left: .8rem;
     }
 
 `

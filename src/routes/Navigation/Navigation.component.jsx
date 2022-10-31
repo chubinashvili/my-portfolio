@@ -27,15 +27,15 @@ const Navigation = () => {
                     <Navlink isThemeDark={isThemeDark} to='/about'>ABOUT</Navlink>
                 </li>
             </NavLinks>
-            <IconContainer role='button' onClick={handleThemeChange}>
-                {
-                    isThemeDark ? (
-                        <SunIcon />
-                    ) : (
-                        <MoonIcon />
-                    )
-                }
-            </IconContainer>
+                <IconContainer role='button' onClick={handleThemeChange}>
+                    {
+                        isThemeDark ? (
+                            <SunIcon />
+                        ) : (
+                            <MoonIcon />
+                        )
+                    }
+                </IconContainer>
         </NavContainer> 
         <Outlet />
         <Footer />
