@@ -19,6 +19,9 @@ export const HomeContainer = styled.div`
 
 export const ContentContainer = styled.div`
     text-align: left;
+    @media screen and (max-width: 800px) {
+        padding-inline: 1.2rem;
+    }
 `
 
 export const Text = styled.h1`
@@ -26,17 +29,16 @@ export const Text = styled.h1`
     color: #435858;
     font-weight: 400;
     max-width: 60rem;
+    margin-bottom: 2rem;
     ${({isThemeDark}) => isThemeDark && darkThemeStylesTxt} 
     @media screen and (max-width: 800px) {
         line-height: 1.7rem;
         max-width: 40rem;
-        margin-left: .8rem;
     }
 `
 
 export const Button = styled.a`
     ${({isThemeDark}) => isThemeDark && darkThemeStylesBtn} 
-    margin-top: 1.5rem;
     display: inline-block;
     background-color:  #435858;
     color: rgb(229 229 229);
@@ -48,7 +50,7 @@ export const Button = styled.a`
     width: 10rem;
     @media screen and (max-width: 800px) {
         margin-right: 0rem;
-        margin-left: .8rem;
+        /* margin-left: .8rem; */
     }
 `
 

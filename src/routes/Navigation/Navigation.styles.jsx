@@ -28,6 +28,7 @@ export const NavLinks = styled.ul`
     justify-content: space-between;
     @media screen and (max-width: 480px) {
         width: 70%;
+        padding-left: 1.6rem;
     }
 `
 

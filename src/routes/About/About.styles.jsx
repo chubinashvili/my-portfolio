@@ -13,7 +13,9 @@ export const AboutContainer = styled.div`
 
 export const AboutTextContainer = styled.div`
     text-align: left;
-
+    @media screen and (max-width: 800px) {
+        padding-inline: 1.2rem;
+    }
 `
 
 export const AboutText = styled.h1`
@@ -25,7 +27,6 @@ export const AboutText = styled.h1`
     @media screen and (max-width: 800px) {
         line-height: 1.7rem;
         max-width: 50rem;
-        margin-left: .8rem;
     }
 
 `

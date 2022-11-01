@@ -21,7 +21,6 @@ export const ContentContainer = styled.div`
     align-items: center;
     @media screen and (max-width: 522px) {
         flex-direction: column-reverse;
-        margin-bottom: 1.2rem;
     }
 
 `   
