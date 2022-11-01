@@ -23,6 +23,7 @@ export const IconContainer = styled.div`
 `
 export const NavLinks = styled.ul`
     display: flex;
+    padding-left: 0;
     list-style: none;
     justify-content: space-between;
     @media screen and (max-width: 480px) {
