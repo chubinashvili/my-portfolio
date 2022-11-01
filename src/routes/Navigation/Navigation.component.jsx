@@ -18,7 +18,7 @@ const Navigation = () => {
         <NavContainer>
             <NavLinks>
                 <li>
-                    <Navlink isThemeDark={isThemeDark} to='/'>HOME</Navlink>
+                    <Navlink className='first-link' isThemeDark={isThemeDark} to='/'>HOME</Navlink>
                 </li>
                 <li>
                     <Navlink isThemeDark={isThemeDark} to='/projects'>PROJECTS</Navlink>

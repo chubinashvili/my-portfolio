@@ -24,8 +24,8 @@ export const IconContainer = styled.div`
 export const NavLinks = styled.ul`
     display: flex;
     list-style: none;
+    justify-content: space-between;
     @media screen and (max-width: 480px) {
-        justify-content: space-between;
         width: 70%;
     }
 `
@@ -33,6 +33,9 @@ export const NavLinks = styled.ul`
 export const Navlink = styled(Link)`
     text-decoration: none;
     margin-left: 2rem;
+    &.first-link {
+        margin-left: 0;
+    }
     color: #435858;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
     @media screen and (max-width: 480px) {
