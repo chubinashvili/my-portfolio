@@ -19,8 +19,7 @@ const PROJECTS = [
         'FIREBASE',
         'STRIPE'
       ],
-    },
-    {
+    }, {
       title: 'EXPENSIFY',
       body: 'Manage your expenses using web app.',
       web: 'https://expensify5.herokuapp.com/',
@@ -31,22 +30,19 @@ const PROJECTS = [
         'FIREBASE',
         'JEST'
     ],
-    },
-    {
+    }, {
       title: 'YELPCAMP',
       body: 'Discover campgrounds and new cool places',
-      web: 'https://yelpcamp56.herokuapp.com/ ',
+      web: 'https://yelpcamp56.herokuapp.com/',
       imageUrl: '/images/yelpcamp.PNG',
       technologies: ['Javascript', 'Node.js', 'MONGODB'],
-    },
-    {
-        title: 'CHAT APP',
-        body: 'Chat with your friends.',
-        web: 'https://zura-chat-app.herokuapp.com/',
-        imageUrl: '/images/chat-app.PNG',
-        technologies: ['Node.js', 'SOCKET.IO'],
-    },
-    {
+    }, {
+      title: 'CHAT APP',
+      body: 'Chat with your friends.',
+      web: 'https://zura-chat-app.herokuapp.com/',
+      imageUrl: '/images/chat-app.PNG',
+      technologies: ['Node.js', 'SOCKET.IO'],
+    }, {
       title: 'WEATHER APP',
       body: 'Get weather information based on location input.',
       web: 'https://weather-application5.herokuapp.com/',

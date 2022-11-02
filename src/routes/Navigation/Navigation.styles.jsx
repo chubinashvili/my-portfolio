@@ -17,7 +17,6 @@ export const NavContainer = styled.nav`
 export const IconContainer = styled.div`
     cursor: pointer;
     @media screen and (max-width: 480px) {
-        width: 14%;
         justify-content: space-between;
     }
 `
@@ -26,9 +25,10 @@ export const NavLinks = styled.ul`
     padding-left: 0;
     list-style: none;
     justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
     @media screen and (max-width: 480px) {
         width: 70%;
-        padding-left: 1.6rem;
     }
 `
 

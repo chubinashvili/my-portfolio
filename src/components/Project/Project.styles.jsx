@@ -23,7 +23,7 @@ export const ProjectContainer = styled.div`
     color: #3e4343;
     text-align: center;
     background-color: #cfd8d8;       
-    height: 26rem;
+    height: 24.5rem;
     width: 20rem;
     border-radius: 0.35rem;
     border: 1px solid rgba(0,0,0,.125);
@@ -31,18 +31,26 @@ export const ProjectContainer = styled.div`
     ${({isThemeDark}) => isThemeDark && darkThemeStylesContainer} 
 `
 
+export const ContentContainer = styled.div`
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+`
+
 export const Title = styled.h3`
     font-weight: bold;
 `
 
 export const TechList = styled.ul`
-    text-align: center;
+    text-align: left;
     padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
     li {
         border: 1px solid #575a5a;
         display: inline-block;
-        list-style: none;
-        font-size: .9rem;
+        font-size: .75rem;
         font-weight: 400;
         border-radius: 0.35rem;
         padding: 0.5rem;
