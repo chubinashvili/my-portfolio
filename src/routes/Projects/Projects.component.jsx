@@ -32,10 +32,16 @@ const PROJECTS = [
     ],
     }, {
       title: 'YELPCAMP',
-      body: 'Discover campgrounds and new cool places',
+      body: 'Discover campgrounds and new cool places.',
       web: 'https://yelpcamp56.herokuapp.com/',
       imageUrl: '/images/yelpcamp.PNG',
       technologies: ['Javascript', 'Node.js', 'MONGODB'],
+    }, {
+      title: 'MAGIC MEMORY',
+      body: 'Try to match all cards in the fewest attempts.',
+      web: 'https://magic-memory-app.netlify.app/',
+      imageUrl: '/images/magic-memory.PNG',
+      technologies: ['React'],
     }, {
       title: 'CHAT APP',
       body: 'Chat with your friends.',
