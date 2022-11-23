@@ -37,6 +37,12 @@ const PROJECTS = [
       imageUrl: '/images/yelpcamp.PNG',
       technologies: ['Javascript', 'Node.js', 'MONGODB'],
     }, {
+      title: 'COOKING NINJA',
+      body: 'A web app about recipes for cooking.',
+      web: 'https://cooking-ninja-app.netlify.app/',
+      imageUrl: '/images/cooking-ninja.PNG',
+      technologies: ['React', 'firebase'],
+    }, {
       title: 'MAGIC MEMORY',
       body: 'Try to match all cards in the fewest attempts.',
       web: 'https://magic-memory-app.netlify.app/',
