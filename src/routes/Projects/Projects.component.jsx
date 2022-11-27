@@ -30,6 +30,12 @@ const PROJECTS = [
         'FIREBASE',
         'JEST'
     ],
+    },{
+      title: 'FINANCE TRACKER',
+      body: 'A Finance Tracker App for tracking every dollar you spend.',
+      web: 'https://track-every-dollar.web.app/',
+      imageUrl: '/images/finance-tracker.PNG',
+      technologies: ['React', 'FIREBASE'],
     }, {
       title: 'YELPCAMP',
       body: 'Discover campgrounds and new cool places.',
