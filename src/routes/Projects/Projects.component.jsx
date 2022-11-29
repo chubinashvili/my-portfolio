@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import Project from '../../components/Project/Project.component';
-import { ProjectsContainer, ProjectsHeader } from './Projects.styles';
+import { Section, ProjectsContainer, ProjectsHeader } from './Projects.styles';
 
 import { SwitchContext } from '../../contexts/switch.context';
 
@@ -72,14 +72,14 @@ const PROJECTS = [
 const Projects = () => {
   const { isThemeDark } = useContext(SwitchContext);
   return (
-    <section id='projects'>
+    <Section id='projects'>
       <ProjectsHeader isThemeDark={isThemeDark}>Projects Created By Me</ProjectsHeader>
       <ProjectsContainer>
         {PROJECTS.map(project => (
           <Project key={project.title} {...project} />
         ))}
       </ProjectsContainer>
-    </section>
+    </Section>
   )
 }
 

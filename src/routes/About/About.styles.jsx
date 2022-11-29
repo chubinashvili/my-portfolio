@@ -19,7 +19,7 @@ export const AboutTextContainer = styled.div`
 `
 
 export const AboutText = styled.h1`
-    line-height: 2.2rem;
+    line-height: 2.5rem;
     color: #435858;
     font-weight: 400;
     max-width:60rem;

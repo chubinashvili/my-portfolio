@@ -11,7 +11,7 @@ const Home = () => {
     <section id='home'>
         <HomeContainer>
           <ContentContainer>
-            <Text isThemeDark={isThemeDark}>Hello there, I'm <span>Zura Chubinashvili</span>, Web developer. I'm passionate about creating web apps and seek to learn more</Text>
+            <Text isThemeDark={isThemeDark}>Hello, I'm <span>Zura Chubinashvili</span>, Web developer. I'm passionate about creating web apps and seek to learn more</Text>
             <Button isThemeDark={isThemeDark} href='#projects'>
               View My Work
             </Button>

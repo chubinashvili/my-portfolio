@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const darkThemeStylesTxt = css`
-    color: #d3d4d4; 
+    color: #e6e6e6; 
 ` 
 
 const darkThemeStylesLink = css`
@@ -26,10 +26,8 @@ export const ContentContainer = styled.div`
 `   
 export const Text = styled.h4`
     color: #435858;
+    font-weight: 400;
     ${({isThemeDark}) => isThemeDark && darkThemeStylesTxt} 
-    span {
-        font-weight: bold;
-    }
     @media screen and (max-width: 528px) {
         max-width: 100%;
     }
@@ -38,6 +36,7 @@ export const Text = styled.h4`
 export const Link = styled.a`
     text-decoration: none;
     margin-left: 1.2rem;  
-    color: #435858;
+    color: #444452;
+    font-weight: 500;
     ${({isThemeDark}) => isThemeDark && darkThemeStylesLink} 
 `

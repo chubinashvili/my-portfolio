@@ -18,13 +18,13 @@ const Navigation = () => {
         <NavContainer>
             <NavLinks>
                 <li>
-                    <Navlink className='first-link' isThemeDark={isThemeDark} to='/'>HOME</Navlink>
+                    <Navlink className='first-link' isThemeDark={isThemeDark} to='/'>Home</Navlink>
                 </li>
                 <li>
-                    <Navlink isThemeDark={isThemeDark} to='/projects'>PROJECTS</Navlink>
+                    <Navlink isThemeDark={isThemeDark} to='/projects'>Projects</Navlink>
                 </li>
                 <li>
-                    <Navlink isThemeDark={isThemeDark} to='/about'>ABOUT</Navlink>
+                    <Navlink isThemeDark={isThemeDark} to='/about'>About</Navlink>
                 </li>
             </NavLinks>
                 <IconContainer role='button' onClick={handleThemeChange}>

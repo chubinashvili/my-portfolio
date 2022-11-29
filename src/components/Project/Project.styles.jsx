@@ -1,14 +1,16 @@
 import styled, { css } from "styled-components";
 
 const darkThemeStylesContainer = css`
-    color: #24272c;
-    border: none;
-    box-shadow: 0 0 2px 0 #fff;
-    background-color: #999e9e;   
+    color: #e6e6e6;
+    box-shadow: none;
+    background-color: #2c2f35;   
 ` 
 
 const darkThemeStylesList = css`
-    border: 1px solid #24272c;
+    border: 1px solid #222529;
+    background-color: #24272c;
+    color: #e6e6e6;
+    font-weight: 400;
 ` 
 
 export const ProjectLinkWrapper = styled.a`
@@ -20,14 +22,14 @@ export const ProjectContainer = styled.div`
     position: relative;
     flex-direction: column;
     align-items: center;
-    color: #3e4343;
+    color: #444452;
     text-align: center;
-    background-color: #cfd8d8;       
+    background-color: #f7f7f0;       
     height: 24.5rem;
     width: 20rem;
     border-radius: 0.35rem;
-    border: 1px solid rgba(0,0,0,.125);
-    box-shadow: 0px 4px 10px 0;
+    border: none;
+    box-shadow: 0 4px 10px 0 rgb(52, 52, 52, .3);
     ${({isThemeDark}) => isThemeDark && darkThemeStylesContainer} 
 `
 
@@ -38,7 +40,7 @@ export const ContentContainer = styled.div`
 `
 
 export const Title = styled.h3`
-    font-weight: bold;
+    font-weight: 700;
 `
 
 export const TechList = styled.ul`
@@ -48,10 +50,11 @@ export const TechList = styled.ul`
     margin-top: 0;
     margin-bottom: 0;
     li {
-        border: 1px solid #575a5a;
+        border: 1px solid #24272c;
         display: inline-block;
         font-size: .75rem;
-        font-weight: 400;
+        color: #575a5a;
+        font-weight: 700;
         border-radius: 0.35rem;
         padding: 0.5rem;
         margin: 0.5rem;
@@ -70,4 +73,5 @@ export const Image = styled.img`
 export const Txt = styled.p`
     font-size: .9rem;
     line-height: 1.4rem;
+    font-weight: 400;
 `

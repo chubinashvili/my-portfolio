@@ -1,12 +1,12 @@
 import { createContext, useState } from 'react';
 
 export const SwitchContext = createContext({
-    isThemeDark: false,
+    isThemeDark: true,
     setIsThemeDark: () => {},
 });
 
 export const SwitchProvider = ({ children }) => {
-    const [isThemeDark, setIsThemeDark] = useState(false);
+    const [isThemeDark, setIsThemeDark] = useState(true);
     const value = {
         isThemeDark,
         setIsThemeDark

@@ -10,7 +10,7 @@ export const NavContainer = styled.nav`
     max-width: 100vw;
     display: flex;
     justify-content: space-around;
-    height: 16rem;
+    height: 13rem;
     align-items: center;
 `
 
@@ -35,6 +35,7 @@ export const NavLinks = styled.ul`
 export const Navlink = styled(Link)`
     text-decoration: none;
     margin-left: 2rem;
+    font-weight: 400;
     &.first-link {
         margin-left: 0;
     }

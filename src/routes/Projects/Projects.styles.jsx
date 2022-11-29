@@ -4,13 +4,15 @@ const darkThemeStyles = css`
     color: #e6e6e6;
 ` 
 
+export const Section = styled.section`
+    padding: 4rem 0;
+`
 export const ProjectsContainer = styled.div`
     display: grid;
     grid-gap: 4rem;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
     grid-auto-columns: 1fr;
     justify-content: center;
-    margin-bottom: 2.2rem;
     @media screen and (max-width: 800px) {
         grid-gap: 1.5rem;
     }
@@ -18,7 +20,8 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsHeader = styled.h2`
     text-align: center;
-    margin-bottom: 4rem;
-    color: #575a5a;
+    margin-bottom: 5rem;
+    color: #444452;
+    font-weight: 700;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
 `
