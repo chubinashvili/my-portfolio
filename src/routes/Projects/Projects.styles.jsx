@@ -20,7 +20,7 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsHeader = styled.h2`
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3.8rem;
     color: #444452;
     font-weight: 700;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 

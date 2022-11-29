@@ -1,15 +1,15 @@
 import { createGlobalStyle, css } from 'styled-components';
 
 const darkThemeStyles = css`
-    background-color: #24272c;
+    background-color: rgb(36, 39, 44);
 ` 
 
 export const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
     * {
         box-sizing: border-box;
     }
     body {
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         padding: 20px 30px;
@@ -22,6 +22,6 @@ export const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
     }
     #root {
-        transition: background .3s ease-out;    
+        transition: background .2s ease-out;    
     }
 `
