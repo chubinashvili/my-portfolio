@@ -29,7 +29,7 @@ export const ProjectContainer = styled.div`
     width: 20rem;
     border-radius: 0.35rem;
     border: none;
-    box-shadow: 0 4px 10px 0 rgb(52, 52, 52, 1);
+    box-shadow: 0 4px 10px 0 rgb(52, 52, 52, .3);
     ${({isThemeDark}) => isThemeDark && darkThemeStylesContainer} 
 `
 
