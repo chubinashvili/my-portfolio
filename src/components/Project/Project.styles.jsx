@@ -24,12 +24,12 @@ export const ProjectContainer = styled.div`
     align-items: center;
     color: #444452;
     text-align: center;
-    background-color: #f7f7f0;       
+    background-color: #fff;       
     height: 24.5rem;
     width: 20rem;
     border-radius: 0.35rem;
     border: none;
-    box-shadow: 0 4px 10px 0 rgb(52, 52, 52, .3);
+    box-shadow: 0 4px 10px 0 rgb(52, 52, 52, 1);
     ${({isThemeDark}) => isThemeDark && darkThemeStylesContainer} 
 `
 
