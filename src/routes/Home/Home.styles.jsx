@@ -50,9 +50,9 @@ export const Button = styled.a`
     background-color:  #435858;
     color: #fff;
     border-radius: 5px;
-    padding: 1rem 2rem;
+    padding: .8rem 1.8rem;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 700;
     line-height: 1.6;
     width: 10rem;
