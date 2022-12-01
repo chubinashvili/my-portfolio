@@ -34,7 +34,7 @@ const PROJECTS = [
     {
       title: 'THE DOJO',
       body: 'A Project Management Web App.',
-      web: 'https://project-managementt.web.app/',
+      web: 'https://projectt-management.netlify.app/',
       imageUrl: '/images/the-dojo.PNG',
       technologies: ['React', 'FIREBASE'],
     },
