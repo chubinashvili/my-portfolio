@@ -39,7 +39,7 @@ export const Navlink = styled(Link)`
     &.first-link {
         margin-left: 0;
     }
-    color: #435858;
+    color: #334155;;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
     @media screen and (max-width: 480px) {
         margin-left: 0;  

@@ -25,7 +25,7 @@ export const ContentContainer = styled.div`
 
 `   
 export const Text = styled.h4`
-    color: #435858;
+    color: #334155;
     font-weight: 400;
     ${({isThemeDark}) => isThemeDark && darkThemeStylesTxt} 
     @media screen and (max-width: 528px) {
@@ -36,7 +36,7 @@ export const Text = styled.h4`
 export const Link = styled.a`
     text-decoration: none;
     margin-left: 1.2rem;  
-    color: #444452;
+    color: #0f172a;
     font-weight: 500;
     ${({isThemeDark}) => isThemeDark && darkThemeStylesLink} 
 `

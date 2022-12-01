@@ -7,7 +7,7 @@ const darkThemeStylesTxt = css`
     }
 ` 
 const darkThemeStylesBtn = css`
-    background-color:  #3c4b4b;
+    background-color: #1e293b;;
     color: rgb(229 229 229);
 ` 
     
@@ -30,13 +30,12 @@ export const ContentContainer = styled.div`
 
 export const Text = styled.h1`
     line-height: 2.5rem;
-    color: #435858;
+    color: #334155;
     font-weight: 400;
     max-width: 60rem;
     margin-bottom: 2rem;
     span {
-        color: #444452;
-        font-weight: 700;
+        color: #0f172a;
     }
     ${({isThemeDark}) => isThemeDark && darkThemeStylesTxt} 
     @media screen and (max-width: 800px) {
@@ -47,15 +46,16 @@ export const Text = styled.h1`
 
 export const Button = styled.a`
     display: inline-block;
-    background-color:  #435858;
+    background-color:  #334155;
     color: #fff;
-    border-radius: 5px;
-    padding: 1rem 2rem;
+    border-radius: .25rem;
+    padding: .8rem 2rem;
     text-decoration: none;
     font-size: .8rem;
     font-weight: 700;
-    line-height: 1.6;
+    line-height: 1.75;
     width: 10rem;
+    filter: opacity(75%);
     ${({isThemeDark}) => isThemeDark && darkThemeStylesBtn} 
     @media screen and (max-width: 800px) {
         margin-right: 0rem;

@@ -3,19 +3,27 @@ import styled, { css } from "styled-components";
 const darkThemeStylesContainer = css`
     color: #e6e6e6;
     box-shadow: none;
-    background-color: #2c2f35;   
+    background-color: #2c2f35; 
+    &:hover {
+        box-shadow: none;;
+        transform: rotateZ(-2deg) scale(1);
+    }
 ` 
 
 const darkThemeStylesList = css`
-    border: 1px solid #222529;
-    background-color: #24272c;
-    color: #e6e6e6;
+    border: 1px solid #64748b;
+    background-color: #2c2f35 ;
+    color: #cbd5e1;
     font-weight: 400;
 ` 
-
-export const ProjectLinkWrapper = styled.a`
-    text-decoration: none;
-`
+const darkThemeStylesTitle= css`
+    color: #e6e6e6;
+` 
+const darkThemeStylesExternalLink = css`
+    a {
+        filter: invert(80%);
+    }
+` 
 
 export const ProjectContainer = styled.div`
     display: flex;
@@ -23,41 +31,70 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
     align-items: center;
     color: #444452;
-    text-align: center;
+    text-align: left;
     background-color: #fff;       
-    height: 24.5rem;
-    width: 20rem;
-    border-radius: 0.35rem;
+    height: 20.4rem;
+    padding: .9rem;
+    max-width: 500px;
+    border-radius: 0.25rem;
     border: none;
-    box-shadow: 0 4px 10px 0 rgb(52, 52, 52, .3);
+    transition: all 0.3s ease-in-out;
+    box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+    &:hover {
+        box-shadow: #cbd5e1 1px 3px 2px,#e2e8f0 12px 8px 0px;
+        transform: rotateZ(-2deg) scale(1);
+    }
     ${({isThemeDark}) => isThemeDark && darkThemeStylesContainer} 
 `
 
 export const ContentContainer = styled.div`
-    padding: 0 1rem;
     height: 100%;
     width: 100%;
 `
 
+export const ProjectInfo = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const ExternalLinks = styled.p`
+    display: flex;
+    align-items: center;
+    margin: 0;
+    ${({isThemeDark}) => isThemeDark && darkThemeStylesExternalLink} 
+    a {
+        margin-right: .8rem;
+        text-decoration: none;
+    }
+`
+
 export const Title = styled.h3`
-    font-weight: 700;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #0f172a;
+    ${({isThemeDark}) => isThemeDark && darkThemeStylesTitle} 
 `
 
 export const TechList = styled.ul`
     text-align: left;
     padding-left: 0;
     list-style: none;
-    margin-top: 0;
     margin-bottom: 0;
     li {
-        border: 1px solid #24272c;
+        background: #cbd5e1;
+        padding: 0.15rem 0.35rem;
+        color: #64748b;
+        border-radius: .25rem;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        border: none;
         display: inline-block;
-        font-size: .75rem;
-        color: #575a5a;
-        font-weight: 700;
-        border-radius: 0.35rem;
-        padding: 0.5rem;
-        margin: 0.5rem;
+        margin-right: 0.4rem;
+        margin-bottom: .4rem;
+
         ${({isThemeDark}) => isThemeDark && darkThemeStylesList} 
     }
 `
@@ -65,9 +102,8 @@ export const TechList = styled.ul`
 export const Image = styled.img`
     flex: 0 0 auto;
     max-width: 100%;
-    height: 11rem;
-    border-top-left-radius: 0.35rem;
-    border-top-right-radius: 0.35rem;
+    height: 166px;
+    border-radius: .25rem;
 `
 
 export const Txt = styled.p`

@@ -9,6 +9,7 @@ export const AboutContainer = styled.div`
     align-items: center;
     flex-direction: column;
     margin-bottom: 20rem;
+    padding-top: 5rem;
 `
 
 export const AboutTextContainer = styled.div`
@@ -20,7 +21,7 @@ export const AboutTextContainer = styled.div`
 
 export const AboutText = styled.h1`
     line-height: 2.5rem;
-    color: #435858;
+    color: #334155;    
     font-weight: 400;
     max-width:60rem;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 

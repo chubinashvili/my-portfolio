@@ -5,7 +5,7 @@ const darkThemeStyles = css`
 ` 
 
 export const Section = styled.section`
-    padding: 4rem 0;
+    padding: 2rem 0;
 `
 export const ProjectsContainer = styled.div`
     display: grid;
@@ -21,7 +21,8 @@ export const ProjectsContainer = styled.div`
 export const ProjectsHeader = styled.h2`
     text-align: center;
     margin-bottom: 3.8rem;
-    color: #444452;
+    /* color: #444452; */
+    color: #0f172a;
     font-weight: 700;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
 `
