@@ -30,7 +30,15 @@ const PROJECTS = [
         'FIREBASE',
         'JEST'
     ],
-    },{
+    },
+    {
+      title: 'THE DOJO',
+      body: 'A Project Management Web App.',
+      web: 'https://project-managementt.web.app/',
+      imageUrl: '/images/the-dojo.PNG',
+      technologies: ['React', 'FIREBASE'],
+    },
+    {
       title: 'FINANCE TRACKER',
       body: 'A Finance Tracker App for tracking every dollar you spend.',
       web: 'https://track-every-dollar.web.app/',
