@@ -44,6 +44,30 @@ const PROJECTS = [
       imageUrl: '/images/cooking-ninja.PNG',
       technologies: ['React', 'firebase'],
     }, {
+      title: 'YelpCamp',
+      github: 'https://github.com/chubinashvili/yelp-camp',
+      web: 'https://yelpcamp-application.onrender.com/',
+      imageUrl: '/images/yelpcamp.PNG',
+      technologies: ['Javascript', 'Node.js', 'MONGODB'],
+    }, {
+      title: 'Magic Memory',
+      body: 'https://github.com/chubinashvili/magic-memory',
+      web: 'https://magic-memory-app.netlify.app/',
+      imageUrl: '/images/magic-memory.PNG',
+      technologies: ['React'],
+    }, {
+      title: 'Chat App',
+      body: 'https://github.com/chubinashvili/chat-app',
+      web: 'https://chat-application-bphi.onrender.com/',
+      imageUrl: '/images/chat-app.PNG',
+      technologies: ['Node.js', 'SOCKET.IO'],
+    }, {
+      title: 'Weather App',
+      github: 'https://github.com/chubinashvili/weather-app',
+      web: 'https://weather-application-7saf.onrender.com/',
+      imageUrl: '/images/weather-app.PNG',
+      technologies: ['Node.js',],
+    }, {
       title: 'Expensify',
       github: 'https://github.com/chubinashvili/expensify',
       web: 'https://expensify5.herokuapp.com/',
@@ -54,30 +78,6 @@ const PROJECTS = [
         'FIREBASE',
         'JEST'
     ], 
-    }, {
-      title: 'Magic Memory',
-      body: 'https://github.com/chubinashvili/magic-memory',
-      web: 'https://magic-memory-app.netlify.app/',
-      imageUrl: '/images/magic-memory.PNG',
-      technologies: ['React'],
-    },{
-      title: 'YelpCamp',
-      github: 'https://github.com/chubinashvili/yelp-camp',
-      web: 'https://yelpcamp56.herokuapp.com/',
-      imageUrl: '/images/yelpcamp.PNG',
-      technologies: ['Javascript', 'Node.js', 'MONGODB'],
-    }, {
-      title: 'Chat App',
-      body: 'https://github.com/chubinashvili/chat-app',
-      web: 'https://zura-chat-app.herokuapp.com/',
-      imageUrl: '/images/chat-app.PNG',
-      technologies: ['Node.js', 'SOCKET.IO'],
-    }, {
-      title: 'Weather App',
-      github: 'https://github.com/chubinashvili/weather-app',
-      web: 'https://weather-application5.herokuapp.com/',
-      imageUrl: '/images/weather-app.PNG',
-      technologies: ['Node.js',],
     },
 ]
 
