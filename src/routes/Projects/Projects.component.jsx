@@ -19,18 +19,12 @@ const PROJECTS = [
         'STRIPE'
       ],
     }, {
-      title: 'Expensify',
-      github: 'https://github.com/chubinashvili/expensify',
-      web: 'https://expensify5.herokuapp.com/',
-      imageUrl: '/images/expensify.PNG',
-      technologies: [
-        'React', 
-        'REDUX',
-        'FIREBASE',
-        'JEST'
-    ],
-    },
-    {
+      title: 'Jobify',
+      github: 'https://github.com/chubinashvili/jobify',
+      web: 'https://jobify-k454.onrender.com/',
+      imageUrl: '/images/jobify.PNG',
+      technologies: ['React', 'Node.js', 'Express', 'MONGODB'],
+    }, {
       title: 'The Dojo',
       github: 'https://github.com/chubinashvili/the-dojo',
       web: 'https://projectt-management.netlify.app/',
@@ -44,23 +38,34 @@ const PROJECTS = [
       imageUrl: '/images/finance-tracker.PNG',
       technologies: ['React', 'FIREBASE'],
     }, {
-      title: 'YelpCamp',
-      github: 'https://github.com/chubinashvili/yelp-camp',
-      web: 'https://yelpcamp56.herokuapp.com/',
-      imageUrl: '/images/yelpcamp.PNG',
-      technologies: ['Javascript', 'Node.js', 'MONGODB'],
-    }, {
       title: 'Cooking Ninja',
       body: 'https://github.com/chubinashvili/cooking-ninja',
       web: 'https://cooking-ninja-app.netlify.app/',
       imageUrl: '/images/cooking-ninja.PNG',
       technologies: ['React', 'firebase'],
     }, {
+      title: 'Expensify',
+      github: 'https://github.com/chubinashvili/expensify',
+      web: 'https://expensify5.herokuapp.com/',
+      imageUrl: '/images/expensify.PNG',
+      technologies: [
+        'React', 
+        'REDUX',
+        'FIREBASE',
+        'JEST'
+    ], 
+    }, {
       title: 'Magic Memory',
       body: 'https://github.com/chubinashvili/magic-memory',
       web: 'https://magic-memory-app.netlify.app/',
       imageUrl: '/images/magic-memory.PNG',
       technologies: ['React'],
+    },{
+      title: 'YelpCamp',
+      github: 'https://github.com/chubinashvili/yelp-camp',
+      web: 'https://yelpcamp56.herokuapp.com/',
+      imageUrl: '/images/yelpcamp.PNG',
+      technologies: ['Javascript', 'Node.js', 'MONGODB'],
     }, {
       title: 'Chat App',
       body: 'https://github.com/chubinashvili/chat-app',
