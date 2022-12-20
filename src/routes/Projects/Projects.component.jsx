@@ -23,7 +23,7 @@ const PROJECTS = [
       github: 'https://github.com/chubinashvili/jobify',
       web: 'https://jobify-k454.onrender.com/',
       imageUrl: '/images/jobify.PNG',
-      technologies: ['React', 'Node.js', 'Express', 'MONGODB'],
+      technologies: ['React', 'Redux', 'Node.js', 'Express', 'MONGODB'],
     }, {
       title: 'The Dojo',
       github: 'https://github.com/chubinashvili/the-dojo',
