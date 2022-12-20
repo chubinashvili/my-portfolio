@@ -32,7 +32,7 @@ export const Text = styled.h1`
     line-height: 2.5rem;
     color: #334155;
     font-weight: 400;
-    max-width: 60rem;
+    max-width: 59rem;
     margin-bottom: 2rem;
     span {
         color: #0f172a;
