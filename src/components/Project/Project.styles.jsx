@@ -33,7 +33,6 @@ export const ProjectContainer = styled.div`
     color: #444452;
     text-align: left;
     background-color: #fff;       
-    height: 20.4rem;
     padding: .9rem;
     max-width: 500px;
     border-radius: 0.25rem;
