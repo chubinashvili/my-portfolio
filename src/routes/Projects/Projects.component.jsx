@@ -11,7 +11,7 @@ const PROJECTS = [
     github: 'https://github.com/chubinashvili/jobify',
     web: 'https://jobify-k454.onrender.com/',
     imageUrl: '/images/jobify.PNG',
-    technologies: ['React', 'Redux', 'Node.js', 'Express', 'MONGODB', 'React Testing Library', 'Jest'],
+    technologies: ['React', 'Redux', 'Node.js', 'Express', 'MONGODB', 'React Testing Library'],
   }, {
       title: 'Crwn Clothing',
       github: 'https://github.com/chubinashvili/crwn-clothing',
