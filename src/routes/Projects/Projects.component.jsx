@@ -6,7 +6,13 @@ import { Section, ProjectsContainer, ProjectsHeader } from './Projects.styles';
 import { SwitchContext } from '../../contexts/switch.context';
 
 const PROJECTS = [
-    {
+  {
+    title: 'Jobify',
+    github: 'https://github.com/chubinashvili/jobify',
+    web: 'https://jobify-k454.onrender.com/',
+    imageUrl: '/images/jobify.PNG',
+    technologies: ['React', 'Redux', 'Node.js', 'Express', 'MONGODB', 'React Testing Library', 'Jest'],
+  }, {
       title: 'Crwn Clothing',
       github: 'https://github.com/chubinashvili/crwn-clothing',
       web: 'https://crwn-clothing-application.netlify.app/',
@@ -18,12 +24,6 @@ const PROJECTS = [
         'FIREBASE',
         'STRIPE'
       ],
-    }, {
-      title: 'Jobify',
-      github: 'https://github.com/chubinashvili/jobify',
-      web: 'https://jobify-k454.onrender.com/',
-      imageUrl: '/images/jobify.PNG',
-      technologies: ['React', 'Redux', 'Node.js', 'Express', 'MONGODB'],
     }, {
       title: 'The Dojo',
       github: 'https://github.com/chubinashvili/the-dojo',
