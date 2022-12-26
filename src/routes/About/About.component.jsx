@@ -10,7 +10,7 @@ const About = () => {
     <section id='about'>
         <AboutContainer> 
           <AboutTextContainer>
-            <AboutText isThemeDark={isThemeDark}>I'm Zura Chubinashvili, web developer from Tbilisi, Georgia. I'm passionate about creating web apps and seek to learn more</AboutText>
+            <AboutText isThemeDark={isThemeDark}>Hi, I'm Zura Chubinashvili, a web developer from Tbilisi, Georgia. I'm passionate about creating web apps and seek to learn more</AboutText>
           </AboutTextContainer>
         </AboutContainer>
     </section>

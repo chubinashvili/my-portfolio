@@ -2,13 +2,14 @@ import styled, { css } from "styled-components";
 
 const darkThemeStyles = css`
     color: #e6e6e6;
+    font-weight: 300;
 ` 
 
 export const AboutContainer = styled.div`
     display: flex;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 20rem;
+    justify-content: center;
+    padding-bottom: 20rem;
     padding-top: 5rem;
 `
 
@@ -21,8 +22,9 @@ export const AboutTextContainer = styled.div`
 
 export const AboutText = styled.h1`
     line-height: 2.5rem;
-    color: #334155;    
+    color: #0f172a;    
     font-weight: 400;
+    font-size: 1.5rem;
     max-width:60rem;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
     @media screen and (max-width: 800px) {

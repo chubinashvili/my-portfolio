@@ -21,8 +21,7 @@ export const ProjectsContainer = styled.div`
 export const ProjectsHeader = styled.h2`
     text-align: center;
     margin-bottom: 3.8rem;
-    /* color: #444452; */
     color: #0f172a;
-    font-weight: 700;
+    font-weight: 600;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
 `

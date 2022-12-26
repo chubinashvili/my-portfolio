@@ -5,7 +5,6 @@ const darkThemeStyles = css`
 ` 
 
 export const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
     * {
         box-sizing: border-box;
     }
@@ -13,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         padding: 20px 30px;
+        font-weight: 400;
         ${({isThemeDark}) => isThemeDark && darkThemeStyles}
         @media screen and (max-width: 800px) {
             padding: 0;

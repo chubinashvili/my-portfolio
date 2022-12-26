@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components";
 
 const darkThemeStylesTxt = css`
-    color: #e6e6e6;;
+    color: #e6e6e6;
+    font-weight: 300;
     span {
-        color: #e6e6e6;;
+        color: #e6e6e6;
     }
 ` 
 const darkThemeStylesBtn = css`
@@ -15,10 +16,17 @@ const darkThemeStylesBtn = css`
 export const HomeContainer = styled.div`
     padding-bottom: 20rem;
     padding-top: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100vw;
+    /* display: flex;
+    align-items: center; */
+    margin: 0 auto;
+    /* justify-content: center; */
+    max-width: 66.6%;
+    @media screen and (max-width: 811px) {
+        max-width: 85%;
+    }
+    @media screen and (max-width: 480px) {
+        max-width: 100%;
+    }
 `
 
 export const ContentContainer = styled.div`
@@ -29,13 +37,15 @@ export const ContentContainer = styled.div`
 `
 
 export const Text = styled.h1`
-    line-height: 2.5rem;
-    color: #334155;
+    line-height: 2.4rem;
+    color: #0f172a;
     font-weight: 400;
-    max-width: 59rem;
+    font-size: 1.5rem;
+    max-width: 38rem;
     margin-bottom: 2rem;
     span {
         color: #0f172a;
+        font-weight: 700;
     }
     ${({isThemeDark}) => isThemeDark && darkThemeStylesTxt} 
     @media screen and (max-width: 800px) {
