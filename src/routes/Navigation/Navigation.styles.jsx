@@ -16,6 +16,12 @@ export const NavContainer = styled.nav`
 
 export const IconContainer = styled.div`
     cursor: pointer;
+    svg {
+        transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+        &:hover {
+            opacity: .7;
+        }
+    }
     @media screen and (max-width: 480px) {
         justify-content: space-between;
     }
@@ -41,6 +47,10 @@ export const Navlink = styled(Link)`
     }
     color: #334155;;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
+    transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    &:hover {
+        opacity: .7;
+    }
     @media screen and (max-width: 480px) {
         margin-left: 0;  
     }

@@ -38,5 +38,9 @@ export const Link = styled.a`
     margin-left: 1.2rem;  
     color: #0f172a;
     font-weight: 500;
+    transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    &:hover {
+        opacity: .7;
+    }
     ${({isThemeDark}) => isThemeDark && darkThemeStylesLink} 
 `

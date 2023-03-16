@@ -16,10 +16,7 @@ const darkThemeStylesBtn = css`
 export const HomeContainer = styled.div`
     padding-bottom: 20rem;
     padding-top: 5rem;
-    /* display: flex;
-    align-items: center; */
     margin: 0 auto;
-    /* justify-content: center; */
     max-width: 66.6%;
     @media screen and (max-width: 811px) {
         max-width: 85%;
@@ -66,6 +63,10 @@ export const Button = styled.a`
     line-height: 1.75;
     width: 10rem;
     filter: opacity(75%);
+    transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+    &:hover {
+        opacity: .7;
+    }
     ${({isThemeDark}) => isThemeDark && darkThemeStylesBtn} 
     @media screen and (max-width: 800px) {
         margin-right: 0rem;
