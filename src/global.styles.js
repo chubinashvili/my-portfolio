@@ -5,22 +5,33 @@ const darkThemeStyles = css`
 `;
 
 export const GlobalStyle = createGlobalStyle`
-    * {
-        box-sizing: border-box;
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
     }
     body {
         font-family: 'Open Sans', sans-serif;
-        margin: 0;
-        padding: 20px 30px;
         font-weight: 400;
         transition: 0.3s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+        padding: 0 20px;
+
         ${({ isThemeDark }) => isThemeDark && darkThemeStyles}
-        @media screen and (max-width: 800px) {
-            padding: 0;
+        @media screen and (max-width: 667px) {
+            padding: 0 20px;
         }
     }
     html {
         scroll-behavior: smooth;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
     }
     #root {
         transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);

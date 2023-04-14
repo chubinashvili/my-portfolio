@@ -14,20 +14,27 @@ const darkThemeStylesBtn = css`
     
 
 export const HomeContainer = styled.div`
-    padding-bottom: 20rem;
-    padding-top: 5rem;
+    height: 100vh;
     margin: 0 auto;
-    max-width: 66.6%;
-    @media screen and (max-width: 811px) {
-        max-width: 85%;
-    }
-    @media screen and (max-width: 480px) {
-        max-width: 100%;
-    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export const ContentContainer = styled.div`
     text-align: left;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media screen and (max-width: 811px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 480px) {
+        width: 95%;
+    }
     @media screen and (max-width: 800px) {
         padding-inline: 1.2rem;
     }
@@ -38,8 +45,7 @@ export const Text = styled.h1`
     color: #0f172a;
     font-weight: 400;
     font-size: 1.5rem;
-    max-width: 38rem;
-    margin-bottom: 2rem;
+    max-width: 50rem;
     span {
         color: #0f172a;
         font-weight: 700;
@@ -61,12 +67,9 @@ export const Button = styled.a`
     font-size: .8rem;
     font-weight: 700;
     line-height: 1.75;
-    width: 10rem;
+    max-width: 10rem;
+    width: 100%;
     filter: opacity(75%);
-    transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
-    &:hover {
-        opacity: .7;
-    }
     ${({isThemeDark}) => isThemeDark && darkThemeStylesBtn} 
     @media screen and (max-width: 800px) {
         margin-right: 0rem;

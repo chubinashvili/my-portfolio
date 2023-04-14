@@ -20,8 +20,8 @@ const darkThemeStylesTitle= css`
     color: #e6e6e6;
 ` 
 const darkThemeStylesExternalLink = css`
-    a {
-        filter: invert(80%);
+    a > svg > g > path {
+        fill:#e6e6e6!important   
     }
 ` 
 
@@ -39,6 +39,7 @@ export const ProjectContainer = styled.div`
     border: none;
     transition: all 0.3s ease-in-out;
     box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+    gap: 10px;
     &:hover {
         box-shadow: #cbd5e1 1px 3px 2px,#e2e8f0 12px 8px 0px;
         transform: rotateZ(-2deg) scale(1);
@@ -49,6 +50,9 @@ export const ProjectContainer = styled.div`
 export const ContentContainer = styled.div`
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 `
 
 export const ProjectInfo = styled.div`
@@ -61,11 +65,20 @@ export const ExternalLinks = styled.p`
     display: flex;
     align-items: center;
     margin: 0;
-    ${({isThemeDark}) => isThemeDark && darkThemeStylesExternalLink} 
     a {
         margin-right: .8rem;
         text-decoration: none;
     }
+    
+    a svg {
+        transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+        cursor: pointer;
+        
+    }
+    a svg:hover {
+        opacity: .7;
+    }
+    ${({isThemeDark}) => isThemeDark && darkThemeStylesExternalLink} 
 `
 
 export const Title = styled.h3`

@@ -1,11 +1,11 @@
-import React, { Fragment, useContext } from 'react';
+import React, { useContext } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import Footer from '../../components/Footer/Footer.component';
 import { ReactComponent as SunIcon } from '../../assets/sunIcon.svg';
 import { ReactComponent as MoonIcon } from '../../assets/moonIcon.svg';
 
-import { NavContainer, NavLinks, Navlink, IconContainer } from './Navigation.styles';
+import { Main, NavContainer, NavLinks, Navlink, IconContainer } from './Navigation.styles';
 import { SwitchContext } from '../../contexts/switch.context';
 
 const Navigation = () => {
@@ -14,7 +14,7 @@ const Navigation = () => {
     setIsThemeDark(!isThemeDark);
   }
   return (
-    <Fragment>
+    <Main>
         <NavContainer>
             <NavLinks>
                 <li>
@@ -39,7 +39,7 @@ const Navigation = () => {
         </NavContainer> 
         <Outlet />
         <Footer />
-    </Fragment>
+    </Main>
   )
 }
 

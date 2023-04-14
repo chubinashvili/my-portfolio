@@ -6,6 +6,12 @@ const darkThemeStyles = css`
     color: rgb(229 229 229);   
 ` 
 
+export const Main = styled.main`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+
 export const NavContainer = styled.nav`
     max-width: 100vw;
     display: flex;

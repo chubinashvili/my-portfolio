@@ -10,6 +10,7 @@ import { SwitchContext } from './contexts/switch.context';
 
 import { GlobalStyle } from './global.styles';
 
+
 const App = () => {
   const { isThemeDark } = useContext(SwitchContext)
   return (

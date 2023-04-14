@@ -9,14 +9,18 @@ export const AboutContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 20rem;
-    padding-top: 5rem;
+    height: calc(100vh - 19rem);
 `
 
 export const AboutTextContainer = styled.div`
     text-align: left;
-    @media screen and (max-width: 800px) {
-        padding-inline: 1.2rem;
+    width: 60%;
+    height: 50%;
+    @media screen and (max-width: 811px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 480px) {
+        width: 95%;
     }
 `
 
@@ -25,7 +29,7 @@ export const AboutText = styled.h1`
     color: #0f172a;    
     font-weight: 400;
     font-size: 1.5rem;
-    max-width:60rem;
+    max-width: 50rem;
     ${({isThemeDark}) => isThemeDark && darkThemeStyles} 
     @media screen and (max-width: 800px) {
         line-height: 1.7rem;
