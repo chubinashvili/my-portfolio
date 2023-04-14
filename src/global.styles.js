@@ -4,6 +4,20 @@ const darkThemeStyles = css`
   background-color: rgb(36, 39, 44);
 `;
 
+const darkThemeScrollbarStyles = css`
+  ::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.42);
+  }
+`;
+
 export const GlobalStyle = createGlobalStyle`
     *,
     *::before,
@@ -36,4 +50,23 @@ export const GlobalStyle = createGlobalStyle`
     #root {
         transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
     }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgba(36,39,44, .1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(36,39,44, .6);
+        border-radius: 3px; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(36,39,44, .8)
+    }
+
+    ${({ isThemeDark }) => isThemeDark && darkThemeScrollbarStyles}
 `;
