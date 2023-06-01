@@ -10,7 +10,7 @@ const PROJECTS = [
     title: 'Jobify Nextjs',
     github: 'https://github.com/chubinashvili/jobify-nextjs',
     web: 'https://jobify-app.vercel.app/landing',
-    imageUrl: '/images/jobify.PNG',
+    imageUrl: '/images/jobify-nextjs.png',
     technologies: ['Nextjs', 'TypeScript', 'Node.js', 'MONGODB', 'Redux'],
   },
   {
