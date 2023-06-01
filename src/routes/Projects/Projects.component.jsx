@@ -43,7 +43,7 @@ const PROJECTS = [
   },
   {
     title: 'Cooking Ninja',
-    body: 'https://github.com/chubinashvili/cooking-ninja',
+    github: 'https://github.com/chubinashvili/cooking-ninja',
     web: 'https://cooking-ninja-app.netlify.app/',
     imageUrl: '/images/cooking-ninja.PNG',
     technologies: ['React', 'firebase'],
@@ -57,14 +57,14 @@ const PROJECTS = [
   },
   {
     title: 'Magic Memory',
-    body: 'https://github.com/chubinashvili/magic-memory',
+    github: 'https://github.com/chubinashvili/magic-memory',
     web: 'https://magic-memory-app.netlify.app/',
     imageUrl: '/images/magic-memory.PNG',
     technologies: ['React'],
   },
   {
     title: 'Chat App',
-    body: 'https://github.com/chubinashvili/chat-app',
+    github: 'https://github.com/chubinashvili/chat-app',
     web: 'https://chat-application-bphi.onrender.com/',
     imageUrl: '/images/chat-app.PNG',
     technologies: ['Node.js', 'SOCKET.IO'],
